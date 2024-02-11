@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/connexion.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC" />
+    <title>Connexion</title>
+  </head>
+  <body>
+    <section id="content">
+      <header>
+        <nav id="nav">
+          <ul>
+            <li class="nav_button">
+              <a href="accueil.html">Accueil</a>
+            </li>
+            <li class="nav_button">
+              <a href="#actu">Actualités</a>
+            </li>
+            <li class="nav_button">
+              <a href="#collec_title">Collection complète</a>
+            </li>
+            <li class="nav_button">
+              <a href="">Achat de boosters</a>
+            </li>
+            <li class="nav_button">
+              <a href="">Connexion</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div id="promotion_banner">Rejoins des milliers de joueurs et collectionne des cartes de l'univers d'Harry Potter !</div>
+
+      <section id="form-container">
+        <div class="message-error">
+          <ul></ul>
+        </div>
+
+        <div class="message-success">Formulaire envoyé avec succès !</div>
+
+        <form action="" method="post" enctype="multipart/form-data">
+          <div>
+            <label for="pseudo">Username</label>
+            <input type="text" id="username" name="username" placeholder="_xX-MyUsername-Xx_" />
+          </div>
+          <div>
+            <label for="email">EMail</label>
+            <input type="email" id="email" name="email" placeholder="MyEMail@example.com" />
+          </div>
+          <div>
+            <label for="password">MotDePasse</label>
+            <input type="password" id="password" name="password" placeholder="MyVeryStrongPassword" />
+          </div>
+          <div>
+            <label for="passwordConfirm">MotDePasseEncore</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="MyVeryStrongPassword" />
+          </div>
+          <div id="input-radio">
+            <label for="niveauActuel">Niveau actuel :</label>
+            <div class="radio-option">
+              <input type="radio" id="apprenti" name="niveauActuel" />
+              <label for="apprenti" class="label-radio">Apprenti sorcier</label>
+            </div>
+            <div>
+              <input type="radio" id="intermediaire" name="niveauActuel" />
+              <label for="intermediaire" class="label-radio">Intermédiaire</label>
+            </div>
+            <div>
+              <input type="radio" id="confirme" name="niveauActuel" />
+              <label for="confirme" class="label-radio">Confirmé</label>
+            </div>
+            <div>
+              <input type="radio" id="expert" name="niveauActuel" />
+              <label for="expert" class="label-radio">Sorcier renommé</label>
+            </div>
+          </div>
+          <div>
+            <label for="select-maison">Maison :</label>
+            <select name="maison" id="select-maison">
+              <option value="">Choisir une maison</option>
+              <option value="gryffondor">Gryffondor</option>
+              <option value="serpentard">Serpentard</option>
+              <option value="poufsouffle">Poufsouffle</option>
+              <option value="serdaigle">Serdaigle</option>
+            </select>
+          </div>
+
+          <button type="submit">S'inscrire</button>
+        </form>
+      </section>
+    </section>
+    <button id="darkmode-button">Lightmode / Darkmode</button>
+    <footer>
+      <img src="img/logo.png" alt="logo" />
+      <div class="footer_txt">Copyright © 2023 | Mentions légales | Politique de Confidentialité | Gestion des cookies</div>
+    </footer>
+    <script src="connexion.js"></script>
+  </body>
+</html>

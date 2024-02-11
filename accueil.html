@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HP trading card website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC" />
+    <link rel="stylesheet" href="css/accueil.css" />
+  </head>
+
+  <body>
+    <div id="background"></div>
+    <section id="content">
+      <header>
+        <nav id="nav">
+          <ul>
+            <li class="nav_button">
+              <a href="accueil.html">Accueil</a>
+            </li>
+            <li class="nav_button">
+              <a href="#actu">Actualités</a>
+            </li>
+            <li class="nav_button">
+              <a href="#collec_title">Collection complète</a>
+            </li>
+            <li class="nav_button">
+              <a href="boosters.html">Ouvrir des boosters</a>
+            </li>
+            <li class="nav_button">
+              <a href="connexion.html">Connexion</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="logo_container">
+        <img src="img/logo.png" alt="logo jeu de cartes Harry Potter" />
+      </section>
+      <section id="actu">
+        <div id="actu_desc">
+          <div id="titre">Actualités</div>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper</p>
+        </div>
+        <div id="actu_container">
+          <div id="actu_boxes">
+            <div class="box">Actu n°1</div>
+            <div class="box">Actu n°2</div>
+            <div class="box">Actu n°3</div>
+            <div class="box">Actu n°4</div>
+            <div class="box">Actu n°1</div>
+            <div class="box">Actu n°2</div>
+            <div class="box">Actu n°3</div>
+            <div class="box">Actu n°4</div>
+          </div>
+        </div>
+      </section>
+      <div class="swiper-title">Cartes en vedette</div>
+      <!-- Slider main container -->
+      <div class="swiper mon-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide slide-1">
+            <div class="swiper-title-container">
+              <p class="title">Carte 1</p>
+            </div>
+          </div>
+          <div class="swiper-slide slide-2">
+            <div class="swiper-title-container">
+              <p class="title">Carte 2</p>
+            </div>
+          </div>
+          <div class="swiper-slide slide-3">
+            <div class="swiper-title-container">
+              <p class="title">Carte 3</p>
+            </div>
+          </div>
+          <div class="swiper-slide slide-4">
+            <div class="swiper-title-container">
+              <p class="title">Carte 4</p>
+            </div>
+          </div>
+          <div class="swiper-slide slide-5">
+            <div class="swiper-title-container">
+              <p class="title">Carte 5</p>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <div id="collec_title">Collection complète</div>
+      <section id="collec">
+        <div class="filters">
+          <div id="collec_filters_title">Filtres</div>
+          <ul>
+            <li data-filter="professeurs" class="tab tab-active">Professeurs</li>
+            <li data-filter="mangemorts" class="tab">Mangemorts</li>
+            <li data-filter="apprentisSorciers" class="tab">Apprentis Sorciers</li>
+            <li data-filter="autres" class="tab">Autres</li>
+          </ul>
+        </div>
+        <div class="collec-content">
+          <div class="collec-cat filtr-item active" data-category="professeurs">
+            <ul class="collec_cards">
+              <li class="collec_box">Carte 1</li>
+              <li class="collec_box">Carte 2</li>
+              <li class="collec_box">Carte 3</li>
+              <li class="collec_box">Carte 4</li>
+            </ul>
+          </div>
+          <div class="collec-cat filtr-item" data-category="mangemorts">
+            <ul class="collec_cards">
+              <li class="collec_box">Carte 5</li>
+              <li class="collec_box">Carte 6</li>
+              <li class="collec_box">Carte 7</li>
+              <li class="collec_box">Carte 8</li>
+              <li class="collec_box">Carte 9</li>
+              <li class="collec_box">Carte 10</li>
+            </ul>
+          </div>
+          <div class="collec-cat filtr-item" data-category="apprentisSorciers">
+            <ul class="collec_cards">
+              <li class="collec_box">Carte 11</li>
+              <li class="collec_box">Carte 12</li>
+              <li class="collec_box">Carte 13</li>
+              <li class="collec_box">Carte 14</li>
+              <li class="collec_box">Carte 15</li>
+              <li class="collec_box">Carte 16</li>
+              <li class="collec_box">Carte 17</li>
+              <li class="collec_box">Carte 18</li>
+            </ul>
+          </div>
+          <div class="collec-cat filtr-item" data-category="autres">
+            <ul class="collec_cards">
+              <li class="collec_box">Carte 19</li>
+              <li class="collec_box">Carte 20</li>
+              <li class="collec_box">Carte 21</li>
+              <li class="collec_box">Carte 22</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+    <button id="darkmode-button">Lightmode / Darkmode</button>
+    <footer>
+      <img src="img/logo.png" alt="logo" />
+      <div class="footer_txt">Copyright © 2023 | Mentions légales | Politique de Confidentialité | Gestion des cookies</div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js" integrity="sha512-MMprw2AB5GAiQmXXEz5JYiGq2waU0iqD7Whj33m1w0V6Zzt1wyTFnr6rxWW8mfdQ/VksbUkU5c8sVGlO+3stew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="accueil.js"></script>
+    </footer>
+  </body>
+</html>
